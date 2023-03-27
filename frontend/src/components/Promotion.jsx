@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/Promotion.css'
+import './styles/Promotion.css'
 
 const Promotion = (props) => {
     return (

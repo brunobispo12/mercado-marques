@@ -6,7 +6,6 @@ const Header = () => {
 
     function attStateMenu() {
         setOpenMobileMenu((prevState) => !prevState)
-
     }
 
     return (
@@ -24,7 +23,7 @@ const Header = () => {
             <div className="mobile">
                 <button className='mobile-menu' onClick={() => attStateMenu()}>
                     <svg viewBox="0 0 95 40" width="35" height="35">
-                        <rect width="75" height="5" className='teste'></rect>
+                        <rect width="75" height="5"></rect>
                         <rect y="20" width="75" height="5"></rect>
                         <rect y="40" width="75" height="5"></rect>
                     </svg>

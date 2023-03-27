@@ -11,6 +11,10 @@ const Footer = () => {
         <p>Email: xxxxx@gmail.com</p>
         <p>Endereço: xxxxxxxxxxxx</p>
       </div>
+      <div className='restrict-area'>
+        <h3>Área restrita</h3>
+        <p>Login</p>
+      </div>
       <div className='nav'>
         <h3>Navegação</h3>
         <ul>
