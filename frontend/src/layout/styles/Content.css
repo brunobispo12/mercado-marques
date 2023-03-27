@@ -14,8 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15%;
-    padding: 20px;
-    border-bottom: 1px solid black;
+    padding: 40px 20px 75px 20px;
 }
 
 .about-text{
@@ -38,12 +37,11 @@
 }
 
 .promotions{
-    padding: 25px 10vw 25px 10vw;
-    border-bottom: 1px solid black;
+    padding: 25px 10vw 75px 10vw;
 }
 
 .contact-us{
-    padding: 25px 10vw 25px 10vw;
+    padding: 25px 10vw 75px 10vw;
     margin-bottom: 50px;
 }
 
