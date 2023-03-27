@@ -1,0 +1,78 @@
+.mainImg{
+    border-bottom: 1px solid black;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.about{
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15%;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.about-text{
+    display: block;
+    width: 50vw;
+}
+
+.about-text p{
+    margin-top: 10px;
+}
+
+.about-logo{
+    width: 128px;
+    height: 128px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.promotions{
+    padding: 25px 10vw 25px 10vw;
+    border-bottom: 1px solid black;
+}
+
+.contact-us{
+    padding: 25px 10vw 25px 10vw;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-family: general-bold;
+}
+
+h1{
+    font-family: general-bold;
+}
+
+h3{
+    font-family: general-bold;
+}
+
+@media screen and (min-width: 312px) and (max-width: 1024px) {
+
+    .about{
+        height: fit-content;
+    }
+
+    .about-text{
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+
+    .about-logo{
+        margin-top: 35px;
+    }
+
+}

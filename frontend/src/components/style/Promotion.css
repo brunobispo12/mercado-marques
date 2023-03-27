@@ -1,0 +1,39 @@
+.promotion{
+    margin-top: 25px;
+    height: 250px;
+    width: 190px;
+    background-color: #D9D9D9;;
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.promotion h3{
+    text-align: center;
+}
+
+.promotion-img{
+    margin-top: 5px;
+    height: 195px;
+    background-color: lightcoral;
+}
+
+.price{
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price p{
+    font-size: 1.1rem;
+}
+
+.price p:nth-child(1){
+    color: red;
+    text-decoration: line-through;
+}
+
+.price p:nth-child(2){
+    color: green;
+}

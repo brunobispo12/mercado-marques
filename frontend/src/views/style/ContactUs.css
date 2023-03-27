@@ -1,0 +1,50 @@
+.form-conteiner{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form{
+    margin-top: 30px;
+    width: 35vw;
+}
+
+.form input{
+    font-family: general-regular;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-indent: 5px;
+    padding: 3px 0px 3px 0px;
+}
+
+.form button{
+    font-family: general-regular;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.input-subject{
+    border-radius: 5px;
+    font-family: general-regular;
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid black;
+    text-indent: 5px;
+    padding-top: 3px;
+}
+
+@media screen and (min-width: 312px) and (max-width: 1024px) {
+
+    .form{
+        margin-top: 30px;
+        width: 75vw;
+    }
+
+}

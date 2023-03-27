@@ -1,0 +1,106 @@
+header {
+    background-color: #FF4A4A;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 35px 0px 35px;
+}
+
+.desktop-menu>nav>ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.desktop-menu>nav>ul>li>a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile{
+    display: none;
+}
+
+
+@media screen and (min-width: 312px) and (max-width: 1000px) {
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        width: 35px;
+        height: 35px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger{
+        border-top: 2px solid;
+        width: 24px;
+    }
+
+    .hamburger::after, .hamburger::before{
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: black;
+    }
+
+    .menu{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        height: 93px;
+        background-color: #FF4A4A;
+        animation: dropDown .5s ease-in-out 1;
+        overflow: hidden;
+        padding-bottom: 5px;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav li{
+        margin-top: 7px;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    
+
+}
+
+@keyframes dropDown {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 93px;
+    }
+}

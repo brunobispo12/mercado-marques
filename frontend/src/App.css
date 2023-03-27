@@ -1,0 +1,15 @@
+.App{
+    height: fit-content;
+    background-color: #E5E5E5;
+    font-family: general-regular;
+}
+
+@font-face {
+    font-family: general-regular;
+    src: url(./assets/fonts/GeneralSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: general-bold;
+    src: url(./assets/fonts/GeneralSans-Bold.ttf);
+}
