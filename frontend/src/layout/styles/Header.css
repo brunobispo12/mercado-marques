@@ -39,61 +39,53 @@ header {
     .mobile-menu{
         display: block;
         position: absolute;
-        top: 15px;
+        top: 21px;
         right: 25px;
         width: 35px;
         height: 35px;
         border: none;
         background: none;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hamburger{
-        border-top: 2px solid;
-        width: 24px;
-    }
-
-    .hamburger::after, .hamburger::before{
-        content: '';
-        display: block;
-        width: 24px;
-        height: 1px;
-        margin-top: 5px;
-        background-color: black;
     }
 
     .menu{
         position: absolute;
-        top: 65px;
+        top: 80px;
         left: 0;
         width: 100%;
         height: 110px;
         background-color: #FF4A4A;
         animation: dropDown .5s ease-in-out 1;
         overflow: hidden;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     nav ul{
         list-style-type: none;
-        display: flex;
     }
 
     nav li{
         margin-top: 7px;
-        border-bottom: 1px solid black;
         text-align: center;
     }
 
     nav a{
         text-decoration: none;
         color: #fff;
+        font-size: 1.1rem;
     }
 
-    
+    .bar{
+        display: block;
+        height: 1px;
+        width: 85%;
+        margin-top: 2px;
+        border-top: 1px solid black;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
 
 }
 
