@@ -6,7 +6,6 @@ const Promotions = () => {
     return (
         <div>
             <h2>Promoções</h2>
-            <div className='teste'>
                 <div className='promotions-conteiner'>
                     <Promotion/>
                     <Promotion/>
@@ -14,7 +13,6 @@ const Promotions = () => {
                     <Promotion/>
                     <Promotion/>
                 </div>
-            </div>
         </div>
     )
 }

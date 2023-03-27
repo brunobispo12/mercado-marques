@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './styles/Header.css'
 
 const Header = () => {
-    const [openMobileMenu, setOpenMobileMenu] = useState(true)
+    const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
     function attStateMenu() {
         setOpenMobileMenu((prevState) => !prevState)
