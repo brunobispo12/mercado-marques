@@ -21,6 +21,11 @@ header {
     color: #fff;
 }
 
+
+.desktop-menu>nav>ul>li>a:hover{
+    color: #ffffffaf;
+}
+
 .mobile {
     display: none;
 }

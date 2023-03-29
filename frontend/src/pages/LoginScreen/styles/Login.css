@@ -1,0 +1,132 @@
+.login-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF4A4A;
+}
+
+.login-conteiner {
+    background-color: #fff;
+    width: 375px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.345);
+}
+
+.login-form label {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.login-form input {
+    display: block;
+    height: 25px;
+    width: 80%;
+    padding-left: 5px;
+    border-radius: 0px 0px 0px 5px;
+    border: none;
+    border-bottom: 2px solid #FF4A4A;
+    font-size: 0.95rem;
+}
+
+input[type="password"] {
+    input-security: disc;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.center-button {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.center-button button {
+    width: 35%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+
+.center-button button:hover {
+    background-color: #ff4a4a65;
+}
+
+.loading {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.272);
+    height: 100vh;
+    width: 100vw;
+}
+
+.spining-loading {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 8px solid #FF4A4A;
+    border-top: 8px solid transparent;
+    animation: 1s ease-in-out infinite loadingAnime;
+}
+
+.login-error {
+    position: relative;
+    background-color: #FF4A4A;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 2px 0px 2px 0px;
+    border-radius: 15px;
+    top: 8px;
+    margin: 10px 0px 10px 0px;
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button{
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.alt-vision{
+    display: block;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: -21px;
+    right: -75%;
+}
+
+@media screen and (min-width: 312px) and (max-width: 1024px) {
+
+    .login-conteiner {
+        width: 300px;
+    }
+
+}
+
+@keyframes loadingAnime {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

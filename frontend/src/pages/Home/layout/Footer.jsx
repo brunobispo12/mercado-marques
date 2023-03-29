@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import './styles/Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
       </div>
       <div className='restrict-area'>
         <h3>Área restrita</h3>
-        <p>Login</p>
+        <Link to='/login' className='login-link'>Login</Link>
       </div>
       <div className='nav'>
         <h3>Navegação</h3>

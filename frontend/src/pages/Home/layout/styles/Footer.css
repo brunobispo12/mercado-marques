@@ -26,6 +26,19 @@ footer {
     color: #fff;
 }
 
+.nav>ul>li>a:hover{
+    color: #ffffffaf;
+}
+
+.login-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-link:hover{
+    color: #ffffffaf;
+}
+
 @media screen and (max-width: 1025px) {
     footer {
         padding: 15px 35px 15px 15px;
