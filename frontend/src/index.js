@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'
+import FirebaseProvider from './context/firebaseContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
+  <FirebaseProvider>
+    <BrowserRouter>
       <App />
-    </React.StrictMode>
-  </BrowserRouter>
-
+    </BrowserRouter>
+  </FirebaseProvider>
 );

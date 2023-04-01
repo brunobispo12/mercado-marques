@@ -1,18 +1,22 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBoYZ-RE0Qu2xyW6XrkpzDYq0BH8aSuTOs",
-    authDomain: "mercado-d9265.firebaseapp.com",
-    projectId: "mercado-d9265",
-    storageBucket: "mercado-d9265.appspot.com",
-    messagingSenderId: "86295516071",
-    appId: "1:86295516071:web:d295a25475bec7048a5c82",
-    measurementId: "G-N009N253R5"
+    apiKey: "AIzaSyArNhmkLeeO0qHxDTYy1-n2uaTG36UnMoo",
+    authDomain: "mercado-92254.firebaseapp.com",
+    projectId: "mercado-92254",
+    storageBucket: "mercado-92254.appspot.com",
+    messagingSenderId: "799711514671",
+    appId: "1:799711514671:web:89fde4b2bc8adfce6576da",
+    measurementId: "G-8L62ZY71J0"
 };
 
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app)
+export const db = getFirestore(app)
+export const storage = getStorage(app)
 
 

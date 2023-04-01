@@ -25,12 +25,6 @@ const Login = () => {
   }
 
   useEffect(() => {
-    if (error) {
-      console.log(error)
-    }
-  }, [error])
-
-  useEffect(() => {
     if (user) {
       navigate('/dashboard')
     }

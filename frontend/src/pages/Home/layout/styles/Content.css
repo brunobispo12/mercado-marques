@@ -24,6 +24,7 @@
 
 .about-text p{
     margin-top: 10px;
+    font-size: 1.03rem;
 }
 
 .about-logo{
@@ -70,7 +71,7 @@ h3{
     }
 
     .about-logo{
-        margin-top: 35px;
+        margin-top: 50px;
     }
 
 }

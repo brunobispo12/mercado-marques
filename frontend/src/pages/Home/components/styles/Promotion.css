@@ -1,39 +1,44 @@
-.promotion{
+.promotion {
     margin-top: 25px;
-    height: 250px;
+    height: fit-content;
     width: 190px;
-    background-color: #D9D9D9;;
-    padding: 10px;
+    background-color: #D9D9D9;
+    ;
+    padding: 10px 5px 5px 5px;
     justify-self: center;
     align-self: center;
 }
 
-.promotion h3{
+.promotion h3 {
     text-align: center;
 }
 
-.promotion-img{
+.promotion-img {
     margin-top: 5px;
-    height: 195px;
-    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
 }
 
-.price{
-    height: 34px;
+.promotion-img img {
+    height: 210px;
+    width: 85%;
+}
+
+.price {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 
-.price p{
-    font-size: 1.1rem;
+.price p {
+    font-size: 1.03rem;
 }
 
-.price p:nth-child(1){
+.price p:nth-child(1) {
     color: red;
-    text-decoration: line-through;
 }
 
-.price p:nth-child(2){
+.price p:nth-child(2) {
     color: green;
 }

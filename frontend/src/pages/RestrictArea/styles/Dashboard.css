@@ -1,0 +1,122 @@
+.dashboard {
+    min-height: 100vh;
+    padding-bottom: 25px;
+}
+
+.dashboard-header {
+    background-color: #FF4A4A;
+    color: #fff;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.div-link{
+    position: absolute;
+    right: 50px;
+    top: -41px;
+    font-size: 1.2rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #ffffffdd;
+}
+
+.div-link{
+    position: relative;
+    float: right;
+}
+
+.dashboard-body {
+    margin-top: 50px;
+    padding: 0px 20px 0px 20px;
+}
+
+.dashboard-body h2 {
+    margin-left: 90px;
+    color: #fff;
+    background-color: #FF4A4A;
+    width: 175px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-conteiner input[type='file'] {
+    background-color: #fff;
+}
+
+.form-conteiner progress {
+    height: 12px;
+    width: 100%;
+}
+
+.products-delete-area {
+    margin-top: 55px;
+}
+
+.table {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.table th,
+td {
+    padding-right: 25px;
+    border-bottom: 1px solid black;
+}
+
+.table td {
+    padding: 2px;
+}
+
+td div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table button {
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 1px 3px 1px 3px;
+}
+
+.dashboard-body button:hover {
+    background-color: #ff4a4a65;
+}
+
+@media screen and (min-width: 312px) and (max-width: 1000px) {
+    .dashboard-body h2 {
+        margin-left: 0px;
+    }
+
+    .dashboard-header{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+    }
+
+    .div-link{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 312px) and (max-width: 400px) {
+    .table th {
+        font-size: 0.8rem;
+    }
+}

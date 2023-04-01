@@ -4,10 +4,10 @@ import './styles/Promotion.css'
 const Promotion = (props) => {
     return (
         <div className='promotion'>
-            <h3>teste</h3>
-            <div className='promotion-img'></div>
+            <h3>{props.productName}</h3>
+            <div className='promotion-img'><img src={props.productImage} alt=""/></div>
             <div className="price">
-                <p>{`R$: 20`}</p>/<p>{`R$: 15`}</p>
+                <p>{`De: R$ ${props.productPrice}`}</p>{'ㅤ'}{'/'}{'ㅤ'}<p>{`Por: R$ ${props.productDiscount}`}</p>
             </div>
         </div>
     )
