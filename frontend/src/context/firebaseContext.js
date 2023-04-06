@@ -25,15 +25,6 @@ const FirebaseProvider = ({ children }) => {
             getProducts()
         }
 
-        const handleUnload = () => {
-            localStorage.removeItem('productData')
-        }
-
-        window.addEventListener('beforeunload', handleUnload)
-        return () => {
-            window.removeEventListener('beforeunload', handleUnload)
-        }
-
     }, [attProductData])
 
     const clearCache = () => {
