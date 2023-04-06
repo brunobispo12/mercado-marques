@@ -7,9 +7,11 @@ import FirebaseProvider from './context/firebaseContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <FirebaseProvider>
-    <BrowserRouter>
+
+  <BrowserRouter>
+    <FirebaseProvider>
       <App />
-    </BrowserRouter>
-  </FirebaseProvider>
+    </FirebaseProvider>
+  </BrowserRouter>
+
 );

@@ -23,7 +23,6 @@ const ContactUs = () => {
 
         emailjs.send('service_dm8ex2g', 'template_w37pgpj', templateParams, 'iRNx3vqMtUFVJ-G2O')
             .then((response) => {
-                console.log('EMAIL ENVIADO', response.status, response.text)
                 setEmail('')
                 setMessage('')
                 setName('')
@@ -31,7 +30,6 @@ const ContactUs = () => {
             }, (error) => {
                 setError('ERRO: entre em contato com o suporte')
             })
-
     }
 
 

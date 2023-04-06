@@ -17,12 +17,23 @@ const FirebaseProvider = ({ children }) => {
     }
 
     useEffect(() => {
+
         const cachedData = localStorage.getItem('productData')
         if (cachedData) {
             setProductData(JSON.parse(cachedData))
         } else {
             getProducts()
         }
+
+        const handleUnload = () => {
+            localStorage.removeItem('productData')
+        }
+
+        window.addEventListener('beforeunload', handleUnload)
+        return () => {
+            window.removeEventListener('beforeunload', handleUnload)
+        }
+
     }, [attProductData])
 
     const clearCache = () => {

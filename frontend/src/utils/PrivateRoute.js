@@ -8,6 +8,7 @@ const PrivateRoute = () => {
     return (
         auth.currentUser ? <Outlet/> : <Navigate to='/login'/>
     )
+
 }
 
 export default PrivateRoute
